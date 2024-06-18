@@ -4,15 +4,10 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import RestoreIcon from "@mui/icons-material/Restore";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ArchiveIcon from "@mui/icons-material/Archive";
+import AddIcon from "@mui/icons-material/Add";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import PersonIcon from "@mui/icons-material/Person";
 import Paper from "@mui/material/Paper";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import ListItemText from "@mui/material/ListItemText";
-import Avatar from "@mui/material/Avatar";
 
 const Bottombar = () => {
   const [value, setValue] = React.useState(0);
@@ -32,9 +27,9 @@ const Bottombar = () => {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-          <BottomNavigationAction label="Archive" icon={<ArchiveIcon />} />
+          <BottomNavigationAction label="필터" icon={<FilterAltIcon />} />
+          <BottomNavigationAction label="코스 생성" icon={<AddIcon />} />
+          <BottomNavigationAction label="마이페이지" icon={<PersonIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>
